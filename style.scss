@@ -11,10 +11,9 @@ body {
   .container {
     display: flex;
     flex-direction: row;
-    margin: 90px 200px;
-  }
-  .results-container {
-    box-shadow: 15px black;
+    margin: 70px 300px;
+    box-shadow: 3px 3px 3px 3px rgba(130, 155, 238, 0.24);
+    border-radius: 30px;
   }
 }
 
