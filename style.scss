@@ -1,0 +1,214 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body {
+  font-family: HankenGrotesk;
+  margin: 0px !important;
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 90px 200px;
+  }
+  .results-container {
+    box-shadow: 15px black;
+  }
+}
+
+.container {
+  justify-content: center;
+
+  .results-container {
+    background-image: linear-gradient(
+      180deg,
+      hsl(252, 100%, 67%),
+      hsl(241, 81%, 54%)
+    );
+    border-radius: 0px 0px 20px 20px;
+    color: rgb(215, 215, 215);
+    padding: 25px;
+    position: relative;
+
+    .c-1 {
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    .c-2 {
+      border-radius: 100%;
+      padding: 27px 0px;
+      background-image: linear-gradient(
+        180deg,
+        hsla(256, 72%, 46%, 1),
+        hsla(241, 72%, 46%, 0)
+      );
+      text-align: center;
+      margin: auto;
+      width: 150px;
+
+      .c-2-a {
+        font-size: 60px;
+        font-weight: 800;
+        color: rgb(253, 250, 250);
+      }
+      .c-2-b {
+        font-size: 13px;
+      }
+    }
+
+    .c-3 {
+      text-align: center;
+
+      .great {
+        font-size: 25px;
+        color: white;
+        padding: 5px 0px;
+      }
+      .higher {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+
+  .summary-container {
+    padding: 25px;
+    position: relative;
+    z-index: -1;
+    box-shadow: 50px rgb(221, 46, 46);
+
+    .summary-item {
+      padding: 15px;
+      margin: 15px 0px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .summary {
+      color: rgb(21, 21, 64);
+      padding-top: 5px;
+      padding-bottom: 10px;
+      font-weight: 550;
+      font-size: 22px;
+    }
+    .reaction {
+      background-color: rgb(255, 234, 234);
+
+      .re-1 {
+        display: flex;
+        float: left;
+        color: hsl(0, 100%, 67%);
+        padding-right: 60px;
+      }
+      .re-2 {
+        display: flex;
+        float: right;
+
+        .eighty {
+          padding-right: 3px;
+        }
+
+        .hundred {
+          color: gray;
+        }
+      }
+    }
+
+    .memory {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgb(255, 249, 236);
+
+      .mem-1 {
+        display: flex;
+        float: left;
+        color: hsl(39, 100%, 56%);
+        padding-right: 60px;
+      }
+      .mem-2 {
+        display: flex;
+        float: right;
+
+        .ninety-2 {
+          padding-right: 3px;
+        }
+
+        .mem-hundred {
+          color: gray;
+        }
+      }
+    }
+
+    .verbal {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: hsl(221, 100%, 96%);
+
+      .verb-1 {
+        display: flex;
+        float: left;
+        color: hsl(166, 100%, 37%);
+        padding-right: 72px;
+      }
+      .verb-2 {
+        display: flex;
+        float: right;
+
+        .sixty-1 {
+          padding-right: 3px;
+        }
+
+        .verb-hundred {
+          color: gray;
+        }
+      }
+    }
+
+    .visual {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: hsl(221, 100%, 96%);
+
+      .vis-1 {
+        display: flex;
+        float: left;
+        color: hsl(234, 85%, 45%);
+        padding-right: 72px;
+      }
+      .vis-2 {
+        display: flex;
+        float: right;
+
+        .seventy-2 {
+          padding-right: 4px;
+        }
+
+        .vis-hundred {
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .continue {
+    justify-content: center;
+  }
+  .cont1 {
+    border-radius: 25px;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    border: 1px solid hsl(222, 28%, 14%);
+    padding: 15px;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
