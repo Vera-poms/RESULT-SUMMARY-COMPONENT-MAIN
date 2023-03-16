@@ -1,45 +1,78 @@
+$textColor: rgb(215, 215, 215);
 @font-face {
   font-family: HankenGrotesk;
   src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
-body {
+
+body,
+html {
   font-family: HankenGrotesk;
   margin: 0px !important;
+  // height: 100%;
+  // width: 100%;
 }
 
-@media only screen and (min-width: 800px) {
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 767px) {
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+  }
   .container {
     display: flex;
     flex-direction: row;
-    margin: 70px 300px;
-    box-shadow: 3px 3px 3px 3px rgba(130, 155, 238, 0.24);
     border-radius: 30px;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    .results-container {
+      border-radius: 20px;
+      flex-basis: 38%;
+      position: relative;
+      right: 20%;
+    }
+    .summary-container {
+      flex-basis: 30%;
+      border-radius: 20px;
+      position: absolute;
+      z-index: -1;
+      top: 20%;
+      left: 50.8%;
+    }
   }
 }
 
 .container {
-  justify-content: center;
-
   .results-container {
     background-image: linear-gradient(
       180deg,
       hsl(252, 100%, 67%),
       hsl(241, 81%, 54%)
     );
-    border-radius: 0px 0px 20px 20px;
-    color: rgb(215, 215, 215);
-    padding: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid rgb(51, 51, 186);
+    color: $textColor;
+    padding: 24px;
     position: relative;
 
     .c-1 {
       text-align: center;
-      padding: 20px;
-      font-size: 20px;
+      padding-bottom: 17px;
+      font-size: 17px;
     }
 
     .c-2 {
       border-radius: 100%;
-      padding: 27px 0px;
+      padding: 30px 3px;
       background-image: linear-gradient(
         180deg,
         hsla(256, 72%, 46%, 1),
@@ -50,12 +83,13 @@ body {
       width: 150px;
 
       .c-2-a {
-        font-size: 60px;
-        font-weight: 800;
-        color: rgb(253, 250, 250);
+        font-size: 55px;
+        font-weight: 700;
+        color: white;
       }
       .c-2-b {
-        font-size: 13px;
+        font-size: 12px;
+        color: $textColor;
       }
     }
 
@@ -63,21 +97,20 @@ body {
       text-align: center;
 
       .great {
-        font-size: 25px;
+        font-size: 22px;
         color: white;
-        padding: 5px 0px;
+        padding: 15px 10px;
       }
       .higher {
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
+        color: $textColor;
       }
     }
   }
 
   .summary-container {
     padding: 25px;
-    position: relative;
-    z-index: -1;
     box-shadow: 50px rgb(221, 46, 46);
 
     .summary-item {
@@ -90,10 +123,8 @@ body {
 
     .summary {
       color: rgb(21, 21, 64);
-      padding-top: 5px;
-      padding-bottom: 10px;
-      font-weight: 550;
-      font-size: 22px;
+      font-weight: 500;
+      font-size: 18px;
     }
     .reaction {
       background-color: rgb(255, 234, 234);
@@ -127,7 +158,7 @@ body {
         display: flex;
         float: left;
         color: hsl(39, 100%, 56%);
-        padding-right: 60px;
+        padding-right: 50px;
       }
       .mem-2 {
         display: flex;
