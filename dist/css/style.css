@@ -26,7 +26,7 @@ html {
     flex-direction: row;
     border-radius: 30px;
     max-width: 600px;
-    box-shadow: 8px 4px 31px -4px rgba(15, 81, 250, 0.6);
+    box-shadow: -1px 2px 53px 17px rgba(15, 109, 250, 0.31);
   }
   .container .results-container {
     border-radius: 20px;
