@@ -27,25 +27,24 @@ html {
     display: flex;
     flex-direction: row;
     border-radius: 30px;
-    max-width: 500px;
-    // align-items: center;
+    max-width: 600px;
+    box-shadow: 8px 4px 31px -4px rgba(15, 81, 250, 0.6);
 
     .results-container {
       border-radius: 20px;
-      flex-basis: 75%;
-      position: relative;
+      flex-basis: 60%;
+      // position: relative;
     }
     .summary-container {
-      flex-basis: 70%;
+      flex-basis: 65%;
+      // padding: 10px;
 
       .summary-item {
-        // display: flex;
-        padding: 15px;
-        width: 100%;
+        margin: 50px;
       }
       .continue {
         .cont1 {
-          width: 112%;
+          width: 100%;
         }
         .cont1:hover {
           background-image: linear-gradient(

@@ -25,22 +25,21 @@ html {
     display: flex;
     flex-direction: row;
     border-radius: 30px;
-    max-width: 500px;
+    max-width: 600px;
+    box-shadow: 8px 4px 31px -4px rgba(15, 81, 250, 0.6);
   }
   .container .results-container {
     border-radius: 20px;
-    flex-basis: 75%;
-    position: relative;
+    flex-basis: 60%;
   }
   .container .summary-container {
-    flex-basis: 70%;
+    flex-basis: 65%;
   }
   .container .summary-container .summary-item {
-    padding: 15px;
-    width: 100%;
+    margin: 50px;
   }
   .container .summary-container .continue .cont1 {
-    width: 112%;
+    width: 100%;
   }
   .container .summary-container .continue .cont1:hover {
     background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
