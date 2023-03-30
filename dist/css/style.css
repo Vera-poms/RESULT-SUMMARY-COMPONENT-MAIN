@@ -25,24 +25,27 @@ html {
     display: flex;
     flex-direction: row;
     border-radius: 30px;
-    max-width: 800px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
+    max-width: 500px;
   }
   .container .results-container {
     border-radius: 20px;
-    flex-basis: 38%;
+    flex-basis: 75%;
     position: relative;
-    right: 20%;
   }
   .container .summary-container {
-    flex-basis: 30%;
-    border-radius: 20px;
-    position: absolute;
-    z-index: -1;
-    top: 20%;
-    left: 50.8%;
+    flex-basis: 70%;
+  }
+  .container .summary-container .summary-item {
+    padding: 15px;
+    width: 100%;
+  }
+  .container .summary-container .continue .cont1 {
+    width: 112%;
+  }
+  .container .summary-container .continue .cont1:hover {
+    background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+    border: 1px solid hsl(241, 81%, 54%);
   }
 }
 .container .results-container {
@@ -90,7 +93,7 @@ html {
   color: rgb(215, 215, 215);
 }
 .container .summary-container {
-  padding: 25px;
+  padding: 15px;
   box-shadow: 50px rgb(221, 46, 46);
 }
 .container .summary-container .summary-item {
@@ -107,16 +110,15 @@ html {
 }
 .container .summary-container .reaction {
   background-color: rgb(255, 234, 234);
+  display: flex;
+  flex-wrap: wrap;
 }
 .container .summary-container .reaction .re-1 {
   display: flex;
-  float: left;
   color: hsl(0, 100%, 67%);
-  padding-right: 60px;
 }
 .container .summary-container .reaction .re-2 {
   display: flex;
-  float: right;
 }
 .container .summary-container .reaction .re-2 .eighty {
   padding-right: 3px;
@@ -131,9 +133,7 @@ html {
 }
 .container .summary-container .memory .mem-1 {
   display: flex;
-  float: left;
   color: hsl(39, 100%, 56%);
-  padding-right: 50px;
 }
 .container .summary-container .memory .mem-2 {
   display: flex;
@@ -154,7 +154,6 @@ html {
   display: flex;
   float: left;
   color: hsl(166, 100%, 37%);
-  padding-right: 72px;
 }
 .container .summary-container .verbal .verb-2 {
   display: flex;
@@ -175,7 +174,6 @@ html {
   display: flex;
   float: left;
   color: hsl(234, 85%, 45%);
-  padding-right: 72px;
 }
 .container .summary-container .visual .vis-2 {
   display: flex;
@@ -190,14 +188,14 @@ html {
 .container .continue {
   justify-content: center;
 }
-.container .cont1 {
+.container .continue .cont1 {
   border-radius: 25px;
   background-color: hsl(224, 30%, 27%);
   width: 100%;
   border: 1px solid hsl(222, 28%, 14%);
   padding: 15px;
 }
-.container .cont1 a {
+.container .continue .cont1 a {
   text-decoration: none;
   color: white;
   font-size: 14px;
