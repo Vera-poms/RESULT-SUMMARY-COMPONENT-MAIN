@@ -17,8 +17,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://64259c7f93335926d9601d8c--result-summay-component.netlify.app/)
-- Live Site URL: [Add live site URL here](https://64259c7f93335926d9601d8c--result-summay-component.netlify.app/)
+- Solution URL: [https://64259c7f93335926d9601d8c--result-summay-component.netlify.app/]
+- Live Site URL: (https://64259c7f93335926d9601d8c--result-summay-component.netlify.app/]
 
 ### Built with
 
